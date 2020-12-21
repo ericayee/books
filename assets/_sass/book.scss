@@ -58,10 +58,8 @@ a.book__image {
 
 @media (hover) {
   a.book__image {
-    svg {
-      opacity: 1;
-      transition: opacity 400ms;
-    }
+    opacity: 1;
+    transition: opacity 400ms;
 
     &:hover,
     &:focus {
