@@ -48,8 +48,8 @@
     z-index: 2;
     top: 1.75em;
     left: 1.5em;
-    transform: rotate(270deg) translate(-100%, 0);
-    transform-origin: left top;
+    // transform: rotate(270deg) translate(-100%, 0);
+    // transform-origin: left top;
     padding-bottom: 10px;
     border-bottom: 1px solid $color-border;
     background: $color-bg;
@@ -58,17 +58,19 @@
 
   .site-nav {
     display: inline-block;
-    bottom: 1em;
-    right: 2em;
+    // position: fixed;
+    top: 1.75em;
+    right: 1em;
     left: auto;
-    transform: rotate(270deg) translate(100%, -2em);
-    transform-origin: right top;
+    // transform: rotate(270deg) translate(100%, -2em);
+    // transform-origin: right top;
     width: auto;
     padding: 10px 0 0;
     border-top: 1px solid $color-border;
+    text-align: right;
 
     a {
-      margin: 0;
+      margin: 0 0 1em;
     }
 
     a + a {
