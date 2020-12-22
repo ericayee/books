@@ -3,6 +3,7 @@
   {% set current_book_url = url %}
   {% set current_book_title = title %}
   {% set current_book_author = author %}
+  {% set current_book_review = review %}
 {% else %}
   {% set current_book = post.data.book %}
   {% set current_book_url = post.url %}
@@ -15,12 +16,18 @@
 <article class="book">
   <div class="book__info">
     {% if individualPost %}
-      <h1 class="book__title"><span class="book__title-small">Highlights from</span> {{ current_book_title }} by {{ current_book_author }}</h1>
+      <h1 class="book__title">
+        <span class="book__title-small">Highlights from</span>
+        {{ current_book_title }} by {{ current_book_author }}</h1>
     {% else %}
       <h2 class="book__title">{{ current_book_title }} by {{ current_book_author }}</h2>
     {% endif %}
     <div class="book__image">
-      <img src="{{ current_book_cover | url }}" alt="Cover of {{ current_book_title }}" />
+      <img src="{{ current_book_cover | url }}" alt="Cover of {{ current_book_title }}"/>
+    </div>
+    <div class="review">
+      <h3 class="review__title">Why I loved it</h3>
+      <p>{{ current_book_review }}</p>
     </div>
   </div>
 
@@ -29,7 +36,9 @@
       {% set highlight_perma = highlight.text | lower | urlencode | replace("%20", "+") | truncate(15, true, "") %}
       <li class="highlight" id="{{ highlight_perma }}">
         <p class="highlight__text">{{ highlight.text }}</p>
-        {% if highlight.attribution %}<cite class="highlight__attribution"> — {{ highlight.attribution}}</cite>{% endif %}
+        {% if highlight.attribution %}
+          <cite class="highlight__attribution"> — {{ highlight.attribution}}</cite>
+        {% endif %}
         <div class="highlight__meta">
           <span class="highlight__location">{{ highlight.page }}</span>
           <a href="{{ current_book_url | url }}#{{ highlight_perma }}" class="highlight__link">
@@ -43,4 +52,5 @@
       </li>
     {% endfor %}
   </ul>
+</div>
 </article>
