@@ -8,8 +8,8 @@
     <li class="cover">
       {% set current_book = post.data.book %}
       {% set current_cover = '/assets/images/covers/' + current_book + '.jpg' %}
-      <a href="{{ post.url | url }}" class="book__image" data-bgSrc={{ current_cover | url }} title="{{ post.title }}">
-        <img src={{ current_cover | url }} />
+      <a href="{{ post.url }}" class="book__image" data-bgSrc={{ current_cover }} title="{{ post.title }}">
+        <img src={{ current_cover }} />
       </a>
     </li>
   {% endfor %}
