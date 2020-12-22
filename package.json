@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/melanierichards/highlights.git"
+    "url": "git+https://github.com/ericayee/highlights.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/melanierichards/highlights/issues"
+    "url": "https://github.com/ericayee/highlights/issues"
   },
   "homepage": "/highlights",
   "devDependencies": {
