@@ -24,7 +24,8 @@
 }
 
 .book__title-small,
-.highlight__meta {
+.highlight__meta,
+.review__title {
   color: $color-secondary;
   font: .75em/1.2 $font-body;
   @include all-caps();
