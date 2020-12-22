@@ -18,7 +18,7 @@ module.exports = function(eleventyConfig) {
     /* Change value if you'd like to deploy to subdirectory, e.g. "/highlights/"
     * Learn more: https://www.11ty.dev/docs/config/#deploy-to-a-subdirectory-with-a-path-prefix
     */
-    pathPrefix: "/books/"
+    pathPrefix: "/highlights/"
 
   }
 
