@@ -42,7 +42,7 @@
 
 @media (min-width: $bp-l) {
   .page-wrap {
-    margin: 4em auto 0;
+    margin: 6em auto 0;
     padding: 0 6em;
   }
 
@@ -69,12 +69,12 @@
   }
   
   @media (min-width: $bp-l) {
-    .site-header,
+    // .site-header,
     .site-nav {
       animation: 800ms ease-out 600ms forwards fadeIn;
     }
 
-    .site-header::before,
+    // .site-header::before,
     .site-nav::after {
       display: block;
       content: '';
