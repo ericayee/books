@@ -31,6 +31,12 @@
   @include all-caps();
 }
 
+.book__genres {
+  font: 0.9em $font-secondary;
+  @include all-caps();
+  margin-bottom: 1em;
+}
+
 .book__title-small {
   display: block;
   margin-bottom: 1em;

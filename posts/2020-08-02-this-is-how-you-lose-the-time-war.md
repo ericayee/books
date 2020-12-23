@@ -5,5 +5,6 @@ author: Amal El-Mohtar, Max Gladstone
 kindle: false
 date: 2020-08-02
 tags: posts
+genres: sci-fi, romance, LGBT
 review: Creative and lyrical, this short, epistolary ACTUAL enemies-to-lovers is so beautifully written.
 ---

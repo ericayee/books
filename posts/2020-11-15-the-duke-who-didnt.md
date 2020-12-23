@@ -5,5 +5,6 @@ author: Courney Milan
 kindle: false
 date: 2020-11-15
 tags: posts
+genres: historical romance
 review: A low-angst, feel-good historical romance with witty banter, amazing representation and tantalizing descriptions of Chinese food.
 ---

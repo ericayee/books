@@ -3,12 +3,14 @@
   {% set current_book_url = url %}
   {% set current_book_title = title %}
   {% set current_book_author = author %}
+  {% set current_book_genres = genres %}
   {% set current_book_review = review %}
 {% else %}
   {% set current_book = post.data.book %}
   {% set current_book_url = post.url %}
   {% set current_book_title = post.data.title %}
   {% set current_book_author = post.data.author %}
+  {% set current_book_genres = post.data.genres %}
   {% set current_book_review = post.data.review %}
 {% endif %}
 
@@ -26,6 +28,7 @@
     <div class="book__image">
       <img src="{{ current_book_cover | url }}" alt="Cover of {{ current_book_title }}"/>
     </div>
+    <h3 class="book__genres">{{ current_book_genres }}</h3>
     <div class="review">
       <h3 class="review__title">Why I loved it</h3>
       <p>{{ current_book_review }}</p>

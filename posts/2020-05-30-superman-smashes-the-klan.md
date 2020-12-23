@@ -5,5 +5,6 @@ author: Gene Luen Yang (author), Gurihiru (art), Janice Chiang (lettering)
 kindle: false
 date: 2020-05-30
 tags: posts
+genres: YA, superhero
 review: I'm a long-time fan of Yang, and his newest superhero book featuring a Chinese immigrant family is as relevant today as its radio source material was in 1946.
 ---
