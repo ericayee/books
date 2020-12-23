@@ -175,10 +175,11 @@ a.book__image {
 
   .book__info {
     float: left;
-    top: 2em;
+    top: 3em;
     position: -webkit-sticky;
     position: sticky;
     margin-right: 3em;
+    margin-left: 1em;
     width: 200px;
   }
 
