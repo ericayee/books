@@ -25,7 +25,7 @@
 
   <meta name="og:url" content="{{ site.url }}{{ url }}">
   <meta name="og:title" content="{% if title %}{{ title | escape }} | {% endif %} {{ site.url | url }}">
-  <meta name="og:description" content="Some snippets I thought worth highlighting and saving for later">
+  <meta name="og:description" content="Some of my favorite books and highlights.">
 
   {% if book %}
     {% set book_cover = '/assets/images/covers/' + book + '.jpg' %}
@@ -37,6 +37,6 @@
     <meta name="og:image" content="{{ '/assets/images/share-icon.png' | url }}">
   {% endif %}
 
-  <link href="https://fonts.googleapis.com/css?family=Karla|Sorts+Mill+Goudy" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya|Nunito" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v2020.11.27' | url }}" />
 </head>
