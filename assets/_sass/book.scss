@@ -31,10 +31,24 @@
   @include all-caps();
 }
 
+.book__pubdate {
+  font: .75em/1.2 $font-body;
+  @include all-caps();
+  margin-bottom: 1em;
+}
+
 .book__genres {
   font: 0.9em $font-secondary;
   @include all-caps();
   margin-bottom: 1em;
+}
+
+.book__links {
+  margin-top: 1em;
+  font: 0.9em $font-body;
+  p {
+    margin-bottom: 0.5em;
+  }
 }
 
 .book__title-small {
