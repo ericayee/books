@@ -5,6 +5,9 @@
   {% set current_book_author = author %}
   {% set current_book_genres = genres %}
   {% set current_book_review = review %}
+  {% set current_book_pub = pub %}
+  {% set current_book_gr = goodreads %}
+  {% set current_book_bs = bookshop %}
 {% else %}
   {% set current_book = post.data.book %}
   {% set current_book_url = post.url %}
@@ -12,6 +15,9 @@
   {% set current_book_author = post.data.author %}
   {% set current_book_genres = post.data.genres %}
   {% set current_book_review = post.data.review %}
+  {% set current_book_pub = post.data.pub %}
+  {% set current_book_gr = post.data.goodreads %}
+  {% set current_book_bs = post.data.bookshop %}
 {% endif %}
 
 {% set current_book_cover = '/assets/images/covers/' + current_book + '.jpg' %}
@@ -28,10 +34,15 @@
     <div class="book__image">
       <img src="{{ current_book_cover | url }}" alt="Cover of {{ current_book_title }}"/>
     </div>
+    <h4 class="book__pubdate">Published {{ current_book_pub }}</h4>
     <h3 class="book__genres">{{ current_book_genres }}</h3>
     <div class="review">
       <h3 class="review__title">Why I loved it</h3>
       <p>{{ current_book_review }}</p>
+    </div>
+    <div class="book__links">
+      <p><a href={{ current_book_gr }} target="_blank">>Goodreads</a></p>
+      <p><a href={{ current_book_bs }} target="_blank">>Bookshop.org</a></p>
     </div>
   </div>
 
