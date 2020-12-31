@@ -27,9 +27,9 @@
     {% if individualPost %}
       <h1 class="book__title">
         <span class="book__title-small">Highlights from</span>
-        {{ current_book_title }} by {{ current_book_author }}</h1>
+        {{ current_book_title }} <i>by {{ current_book_author }}</i></h1>
     {% else %}
-      <h2 class="book__title">{{ current_book_title }} by {{ current_book_author }}</h2>
+      <h2 class="book__title">{{ current_book_title }} <i>by {{ current_book_author }}</i></h2>
     {% endif %}
     <div class="book__image">
       <img src="{{ current_book_cover | url }}" alt="Cover of {{ current_book_title }}"/>
