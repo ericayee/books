@@ -22,7 +22,7 @@ A site for my book recommendatiosn and highlights: [ericayee.com/highlights](htt
 | npx @11ty/eleventy --serve  | Serve project                          |
 | npx gulp sass:watch         | Watch and build sass files locally     |
 | npx gulp minify-css         | Compress output CSS file before deploy |
-| npx run deploy              | Deploy to GitHub Pages                 |
+| npm run deploy              | Deploy to GitHub Pages                 |
 
 ## Data syntax
 
