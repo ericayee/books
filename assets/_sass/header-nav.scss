@@ -43,7 +43,7 @@
   }
 }
 
-@media (min-width: $bp-l) {
+@media (min-width: $bp-m) {
   .site-header {
     // position: static;
     z-index: 2;
@@ -81,7 +81,7 @@
   }
 }
 
-@media (max-width: $bp-s) {
+@media (max-width: $bp-m) {
   .site-nav {
     position: fixed;
   }

@@ -40,7 +40,7 @@
   }
 }
 
-@media (min-width: $bp-l) {
+@media (min-width: $bp-s) {
   .page-wrap {
     margin: 6em auto 0;
     padding: 0 6em;
@@ -68,7 +68,7 @@
     animation: 800ms ease-out 400ms forwards fadeIn;
   }
   
-  @media (min-width: $bp-l) {
+  @media (min-width: $bp-s) {
     // .site-header,
     .site-nav {
       animation: 800ms ease-out 600ms forwards fadeIn;
